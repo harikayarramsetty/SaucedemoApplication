@@ -11,5 +11,4 @@ glue = {"com/cts/stepdefinitions"},monochrome=true,plugin= {"html:reports/","pre
 
 public class RunnerTest {
 
-	
 }
