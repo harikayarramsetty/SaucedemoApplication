@@ -9,7 +9,6 @@ public class ProductsPage {
 	
 
 		private  By sortLoc = By.xpath("//select[@class='product_sort_container']");
-		
 		private  By proOneLoc =	By.xpath("(//div[@class='inventory_item_price'])[1]");
 		private  By proTwoLoc =	By.xpath("(//div[@class='inventory_item_price'])[2]");
 		private  By cartLoc =	By.xpath("//span[@class='fa-layers-counter shopping_cart_badge']");
