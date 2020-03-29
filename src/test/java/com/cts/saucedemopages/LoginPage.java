@@ -6,10 +6,10 @@ import org.openqa.selenium.WebDriver;
 public class LoginPage {
 	
 	
-	    private static By userNameLoc =	By.id("user-name");
-	    private static By passwordLoc  = By.id("password");
-	    private static By clickOnLoginLoc =   By.xpath("//input[@value='LOGIN']");
-	    private static By errorLoc =By.xpath("//h3[@data-test='error']");
+	    private  By userNameLoc =	By.id("user-name");
+	    private  By passwordLoc  = By.id("password");
+	    private  By clickOnLoginLoc =   By.xpath("//input[@value='LOGIN']");
+	    private  By errorLoc =By.xpath("//h3[@data-test='error']");
 		private WebDriver driver;
 	  
 public LoginPage(WebDriver driver)

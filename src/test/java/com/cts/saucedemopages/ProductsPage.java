@@ -8,15 +8,14 @@ public class ProductsPage {
 	
 	
 
-		private static By sortLoc = By.xpath("//select[@class='product_sort_container']");
-		private static By addToCartLoc =By.xpath("(//button[@class='btn_primary btn_inventory'])[1]");
-		private static By clickOnOpenMenuLoc =	By.xpath("//button[text()='Open Menu']");
-		private static By proOneLoc =	By.xpath("(//div[@class='inventory_item_price'])[1]");
-		private static By proTwoLoc =	By.xpath("(//div[@class='inventory_item_price'])[2]");
-		private static By cartLoc =	By.xpath("//span[@class='fa-layers-counter shopping_cart_badge']");
-		private static By menuLoc = By.xpath("//button[text()='Open Menu']");
-		private static By productTextLoc=By.xpath("//div[text()='Products']");
-		private static By logOutLoc = By.linkText("Logout");
+		private  By sortLoc = By.xpath("//select[@class='product_sort_container']");
+		
+		private  By proOneLoc =	By.xpath("(//div[@class='inventory_item_price'])[1]");
+		private  By proTwoLoc =	By.xpath("(//div[@class='inventory_item_price'])[2]");
+		private  By cartLoc =	By.xpath("//span[@class='fa-layers-counter shopping_cart_badge']");
+		private  By menuLoc = By.xpath("//button[text()='Open Menu']");
+		private  By productTextLoc=By.xpath("//div[text()='Products']");
+		private  By logOutLoc = By.linkText("Logout");
 		private WebDriver driver;
 		
 		public ProductsPage(WebDriver driver )
@@ -29,15 +28,8 @@ public class ProductsPage {
 
 			selectName.selectByVisibleText(text);
 		}
-	    public  void clickOnAddToCart( )
-	    {
-	    	driver.findElement(addToCartLoc).click();
-	    }
-	    public  void clickOnOpenMenu( )
-	    {
-	    	driver.findElement(clickOnOpenMenuLoc).click();
-	    }
 	   
+	   	   
 		public  String productLToH( ) {
 
 	    	String pro1 = driver.findElement(proOneLoc).getText();
